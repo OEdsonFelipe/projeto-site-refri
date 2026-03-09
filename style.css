@@ -9,7 +9,7 @@
     background-color: var(--background);
 }
 
-.item.ativa{
+.item.active{
     display: block;
 }
 
@@ -61,4 +61,19 @@
 }
 #next{
 right: 30px;
+}
+
+@keyframes toActive {
+    from{
+        top: 100%;
+        opacity: 0;
+    }   
+}
+
+.item.active img.fruta { 
+    animation: toActive 0.5s ease-in-out 1 ;
+}
+
+.item.active .titulo {
+      animation: toActive 0.5s ease-in-out 1 ;
 }
